@@ -1,5 +1,4 @@
 # Reads in and filters data set by desired date range.
-
 read_data <- function(infile) {
 	d <- read.csv(
 		infile, sep=";", 

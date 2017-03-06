@@ -14,6 +14,7 @@ dateTime <- paste(d$Date, d$Time)
 dateTimeFormat = "%d/%m/%Y %H:%M:%S"
 d$DateTime <- as.POSIXct(dateTime, format = dateTimeFormat)
 
+par(mfcol=c(1,1))
 plot(d$DateTime, d$Global_active_power, pch = ".", xlab="", ylab="Global Active Power (kilowatts)");
 lines(d$DateTime, d$Global_active_power)
 
