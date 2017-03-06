@@ -14,6 +14,7 @@ dateTimeFormat = "%d/%m/%Y %H:%M:%S"
 d$DateTime <- as.POSIXct(dateTime, format = dateTimeFormat)
 
 par(mfcol=c(1,1))
+par(bg="white")
 plot(d$DateTime, d$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering");
 
 points(d$DateTime, d$Sub_metering_2, pch=".", xlab="", ylab="")

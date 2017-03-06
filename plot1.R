@@ -13,6 +13,7 @@ d <- filter_data(d)
 # must set main = "" so the default title isn't drawn
 # note: cannot specify xlab/ylab after rendering!!!
 par(mfcol=c(1,1))
+par(bg="white")
 hist(d$Global_active_power, xlab = "Global Active Power (kilowatts)", col="red", main="")
 title("Global Active Power")
 

@@ -14,6 +14,7 @@ dateTimeFormat = "%d/%m/%Y %H:%M:%S"
 d$DateTime <- as.POSIXct(dateTime, format = dateTimeFormat)
 
 par(mfcol = c(2,2))
+par(bg="white")
 
 # plot 1
 plot(d$DateTime, d$Global_active_power, type="l", xlab="", ylab="Global Active Power");
