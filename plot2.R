@@ -14,7 +14,7 @@ dateTime <- paste(d$Date, d$Time)
 dateTimeFormat = "%d/%m/%Y %H:%M:%S"
 d$DateTime <- as.POSIXct(dateTime, format = dateTimeFormat)
 
-plot(d$DateTime, d$Global_active_power, pch = 27, xlab="", ylab="Global Active Power (kilowatts)");
+plot(d$DateTime, d$Global_active_power, pch = ".", xlab="", ylab="Global Active Power (kilowatts)");
 lines(d$DateTime, d$Global_active_power)
 
 # write PNG file
